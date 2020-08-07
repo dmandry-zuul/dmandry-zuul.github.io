@@ -1,0 +1,116 @@
+2020-08-07 22:14:57.429231 | Job console starting...
+2020-08-07 22:15:00.577761 | Running Ansible setup...
+2020-08-07 22:15:01.922000 | PRE-RUN START: [trusted : review.gerrithub.io/dmandry/zuul-config/playbooks/base/pre.yaml@master]
+2020-08-07 22:15:03.224840 | 
+2020-08-07 22:15:03.224978 | PLAY [all]
+2020-08-07 22:15:03.244969 | 
+2020-08-07 22:15:03.245072 | TASK [Gathering Facts]
+2020-08-07 22:15:05.533836 | python | ok
+2020-08-07 22:15:05.565822 | 
+2020-08-07 22:15:05.565937 | TASK [start-zuul-console : Start zuul_console daemon.]
+2020-08-07 22:15:06.527233 | python | ok
+2020-08-07 22:15:06.544351 | 
+2020-08-07 22:15:06.544457 | LOOP [prepare-workspace-openshift : include_tasks]
+2020-08-07 22:15:06.655967 | python | included: /var/lib/zuul/builds/f50e4581ca5446ee8f733b9e3f66ed61/trusted/project_1/opendev.org/zuul/zuul-jobs/roles/prepare-workspace-openshift/tasks/rsync.yaml
+2020-08-07 22:15:06.666556 | 
+2020-08-07 22:15:06.666679 | TASK [prepare-workspace-openshift : Create src directory]
+2020-08-07 22:15:07.407405 | python -> localhost | ok: Runtime: 0:00:00.347898
+2020-08-07 22:15:07.427850 | 
+2020-08-07 22:15:07.427957 | TASK [prepare-workspace-openshift : Copy src repos to the pod]
+2020-08-07 22:15:09.123392 | 
+2020-08-07 22:15:09.123830 | PLAY RECAP
+2020-08-07 22:15:09.123927 | python | ok: 5 changed: 2 unreachable: 0 failed: 0 skipped: 0 rescued: 0 ignored: 0
+2020-08-07 22:15:09.123976 | 
+2020-08-07 22:15:09.249087 | PRE-RUN END RESULT_NORMAL: [trusted : review.gerrithub.io/dmandry/zuul-config/playbooks/base/pre.yaml@master]
+2020-08-07 22:15:09.249333 | RUN START: [untrusted : review.gerrithub.io/dmandry/zuul-test/playbooks/testjob.yaml@master]
+2020-08-07 22:15:10.568953 | 
+2020-08-07 22:15:10.569104 | PLAY [all]
+2020-08-07 22:15:10.593777 | 
+2020-08-07 22:15:10.593880 | TASK [debug]
+2020-08-07 22:15:10.624455 | Hello world!
+2020-08-07 22:15:10.644136 | 
+2020-08-07 22:15:10.644250 | PLAY RECAP
+2020-08-07 22:15:10.644333 | python | ok: 1 changed: 0 unreachable: 0 failed: 0 skipped: 0 rescued: 0 ignored: 0
+2020-08-07 22:15:10.644379 | 
+2020-08-07 22:15:10.760268 | RUN END RESULT_NORMAL: [untrusted : review.gerrithub.io/dmandry/zuul-test/playbooks/testjob.yaml@master]
+2020-08-07 22:15:10.760570 | POST-RUN START: [trusted : review.gerrithub.io/dmandry/zuul-config/playbooks/base/post-logs.yaml@master]
+2020-08-07 22:15:12.091176 | 
+2020-08-07 22:15:12.091318 | PLAY [localhost]
+2020-08-07 22:15:12.116130 | 
+2020-08-07 22:15:12.116241 | TASK [generate-zuul-manifest : Generate Zuul manifest]
+2020-08-07 22:15:12.600118 | localhost | changed
+2020-08-07 22:15:12.623739 | 
+2020-08-07 22:15:12.623847 | TASK [generate-zuul-manifest : Return Zuul manifest URL to Zuul]
+2020-08-07 22:15:12.736046 | localhost | ok
+2020-08-07 22:15:12.750788 | 
+2020-08-07 22:15:12.750915 | TASK [ara-report : Check that ARA is installed]
+2020-08-07 22:15:13.241394 | localhost | /usr/local/lib/zuul/ansible/2.9/bin/ara
+2020-08-07 22:15:13.241586 | localhost | ok: Runtime: 0:00:00.002810
+2020-08-07 22:15:13.255006 | 
+2020-08-07 22:15:13.255110 | TASK [ara-report : Warn if ARA is not installed]
+2020-08-07 22:15:13.322750 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:13.336352 | 
+2020-08-07 22:15:13.336455 | TASK [ara-report : Check that the ARA database exists]
+2020-08-07 22:15:13.806163 | localhost | ok
+2020-08-07 22:15:13.820655 | 
+2020-08-07 22:15:13.820759 | TASK [ara-report : Warn if no database is found]
+2020-08-07 22:15:13.888034 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:13.901923 | 
+2020-08-07 22:15:13.902032 | TASK [ara-report : Validate role configuration]
+2020-08-07 22:15:13.972502 | localhost | ok: All assertions passed
+2020-08-07 22:15:13.986156 | 
+2020-08-07 22:15:13.986261 | TASK [ara-report : Prefix the log path with the log root]
+2020-08-07 22:15:14.057441 | localhost | ok
+2020-08-07 22:15:14.071640 | 
+2020-08-07 22:15:14.071747 | TASK [ara-report : Generate ARA HTML output]
+2020-08-07 22:15:16.163373 | localhost | Done.
+2020-08-07 22:15:16.163661 | localhost | ok: Runtime: 0:00:01.785825
+2020-08-07 22:15:16.177647 | 
+2020-08-07 22:15:16.177757 | TASK [ara-report : Compress ARA HTML output]
+2020-08-07 22:15:16.245764 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:16.260522 | 
+2020-08-07 22:15:16.260646 | TASK [ara-report : Return ARA report]
+2020-08-07 22:15:16.341742 | localhost | ok
+2020-08-07 22:15:16.384923 | 
+2020-08-07 22:15:16.385058 | TASK [ara-report : Create the ARA database report directory]
+2020-08-07 22:15:16.453658 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:16.467864 | 
+2020-08-07 22:15:16.467974 | TASK [ara-report : Save the ARA database]
+2020-08-07 22:15:16.535716 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:16.550051 | 
+2020-08-07 22:15:16.550160 | TASK [ara-report : Return ARA report]
+2020-08-07 22:15:16.617893 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:16.631992 | 
+2020-08-07 22:15:16.632102 | TASK [Set zuul-log-path fact]
+2020-08-07 22:15:16.668984 | localhost | ok
+2020-08-07 22:15:16.694612 | 
+2020-08-07 22:15:16.694750 | TASK [set-zuul-log-path-fact : Set log path for a change]
+2020-08-07 22:15:16.783089 | localhost | ok
+2020-08-07 22:15:16.798271 | 
+2020-08-07 22:15:16.798395 | TASK [set-zuul-log-path-fact : Set log path for a ref update]
+2020-08-07 22:15:16.867467 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:16.882169 | 
+2020-08-07 22:15:16.882287 | TASK [set-zuul-log-path-fact : Set log path for a periodic job]
+2020-08-07 22:15:16.950494 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:16.965359 | 
+2020-08-07 22:15:16.965487 | TASK [set-zuul-log-path-fact : Set log path for a change]
+2020-08-07 22:15:16.993055 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:17.006831 | 
+2020-08-07 22:15:17.006944 | TASK [set-zuul-log-path-fact : Set log path for a ref update]
+2020-08-07 22:15:17.034580 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:17.048912 | 
+2020-08-07 22:15:17.049031 | TASK [set-zuul-log-path-fact : Set log path for a periodic job]
+2020-08-07 22:15:17.076965 | localhost | skipping: Conditional result was False
+2020-08-07 22:15:17.092981 | 
+2020-08-07 22:15:17.093087 | TASK [upload-logs-github : Clone logs repository]
+2020-08-07 22:15:18.016608 | localhost -> localhost | Cloning into '/var/lib/zuul/builds/f50e4581ca5446ee8f733b9e3f66ed61/work/logs/../github.io'...
+2020-08-07 22:15:18.016910 | localhost -> localhost | Failed to add the RSA host key for IP address '140.82.112.4' to the list of known hosts (/.ssh/known_hosts).
+2020-08-07 22:15:18.016998 | localhost -> localhost | ok: Runtime: 0:00:00.657177
+2020-08-07 22:15:18.034467 | 
+2020-08-07 22:15:18.034600 | TASK [upload-logs-github : Create log directories]
+2020-08-07 22:15:18.298359 | localhost -> localhost | ok: Runtime: 0:00:00.002744
+2020-08-07 22:15:18.315395 | 
+2020-08-07 22:15:18.315505 | TASK [upload-logs-github : Ensure logs are readable before uploading]
+2020-08-07 22:15:18.659868 | localhost -> localhost | ok: Runtime: 0:00:00.003468
+2020-08-07 22:15:18.685594 | 
+2020-08-07 22:15:18.685745 | TASK [upload-logs-github : Upload logs to local repository]
