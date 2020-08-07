@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA Records Ansible | Making Ansible Playbooks easier to understand and troubleshoot">
+    <title>ARA Records Ansible</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+          <h2>File: <strong>/var/lib/zuul/builds/396b739c7a7e4120a482fd817d8dac5e/trusted/project_0/review.gerrithub.io/dmandry/zuul-config/playbooks/base/post-logs.yaml</strong></h2>
+          <p>Last updated: n/a</p>
+          <p>Ansible version: <strong>2.9.7</strong></p>
+          <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="#line-1"> 1</a>
+<a href="#line-2"> 2</a>
+<a href="#line-3"> 3</a>
+<a href="#line-4"> 4</a>
+<a href="#line-5"> 5</a>
+<a href="#line-6"> 6</a>
+<a href="#line-7"> 7</a>
+<a href="#line-8"> 8</a>
+<a href="#line-9"> 9</a>
+<a href="#line-10">10</a>
+<a href="#line-11">11</a></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="p p-Indicator">-</span> <span class="nt">hosts</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">localhost</span>
+</span><span id="line-2"><a name="line-2"></a>  <span class="nt">gather_facts</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
+</span><span id="line-3"><a name="line-3"></a>  <span class="nt">roles</span><span class="p">:</span>
+</span><span id="line-4"><a name="line-4"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">generate-zuul-manifest</span>
+</span><span id="line-5"><a name="line-5"></a>    <span class="p p-Indicator">-</span> <span class="nt">role</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ara-report</span>
+</span><span id="line-6"><a name="line-6"></a>      <span class="nt">ara_report_type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">html</span>
+</span><span id="line-7"><a name="line-7"></a>      <span class="nt">ara_report_path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ara-report</span>
+</span><span id="line-8"><a name="line-8"></a>      <span class="nt">ara_compress_html</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span id="line-9"><a name="line-9"></a>    <span class="p p-Indicator">-</span> <span class="nt">role</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">upload-logs-github</span>
+</span><span id="line-10"><a name="line-10"></a>      <span class="nt">zuul_github_user</span><span class="p">:</span> <span class="s">&quot;dmandry-zuul&quot;</span>
+</span><span id="line-11"><a name="line-11"></a>      <span class="nt">zuul_log_verbose</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span></pre></div>
+</td></tr></table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
