@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA Records Ansible | Making Ansible Playbooks easier to understand and troubleshoot">
+    <title>ARA Records Ansible</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ara-report : Check that the ARA database exists</strong></h2>
+          <h2>Host: <strong>localhost</strong></h2>
+          <p>Time: <strong>2020-08-08 13:51:08</strong></p>
+          <p>Ansible version: <strong>2.9.7</strong></p>
+          
+          
+              
+    
+
+        <h2>Stat</h2>
+                <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;atime&quot;</span><span class="p">:</span> <span class="mf">1596894668.8755603</span><span class="p">,</span>
+    <span class="nt">&quot;attr_flags&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+    <span class="nt">&quot;blocks&quot;</span><span class="p">:</span> <span class="mi">248</span><span class="p">,</span>
+    <span class="nt">&quot;charset&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;59d4cffe6ad6d497b78387bbe57e4152283c991c&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ctime&quot;</span><span class="p">:</span> <span class="mf">1596894668.88256</span><span class="p">,</span>
+    <span class="nt">&quot;dev&quot;</span><span class="p">:</span> <span class="mi">51715</span><span class="p">,</span>
+    <span class="nt">&quot;device_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;exists&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;gid&quot;</span><span class="p">:</span> <span class="mi">1006290000</span><span class="p">,</span>
+    <span class="nt">&quot;inode&quot;</span><span class="p">:</span> <span class="mi">201879592</span><span class="p">,</span>
+    <span class="nt">&quot;isblk&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;ischr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isdir&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isfifo&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isgid&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;islnk&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isreg&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;issock&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isuid&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;unknown&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0644&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mtime&quot;</span><span class="p">:</span> <span class="mf">1596894668.88256</span><span class="p">,</span>
+    <span class="nt">&quot;nlink&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/zuul/builds/f2127ec346d04b2b9d9a48455b1a7d8e/work/.ara/ansible.sqlite&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;pw_name&quot;</span><span class="p">:</span> <span class="s2">&quot;1006290000&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;readable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;rgrp&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;roth&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;rusr&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">126976</span><span class="p">,</span>
+    <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="mi">1006290000</span><span class="p">,</span>
+    <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1445728883&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;wgrp&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;woth&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;writeable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;wusr&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;xgrp&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;xoth&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;xusr&quot;</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">}</span>
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>
