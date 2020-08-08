@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA Records Ansible | Making Ansible Playbooks easier to understand and troubleshoot">
+    <title>ARA Records Ansible</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>Gathering Facts</strong></h2>
+          <h2>Tags: <strong>always</strong></h2>
+          <h2>Host: <strong>python</strong></h2>
+          <p>Time: <strong>2020-08-08 14:01:19</strong></p>
+          <p>Ansible version: <strong>2.9.7</strong></p>
+          
+          
+              
+    
+
+        <h2>Ansible_facts</h2>
+                <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;ansible_all_ipv4_addresses&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;10.129.4.202&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;ansible_all_ipv6_addresses&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;fe80::10c0:d7ff:fe84:509e&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;ansible_apparmor&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;disabled&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_architecture&quot;</span><span class="p">:</span> <span class="s2">&quot;x86_64&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_bios_date&quot;</span><span class="p">:</span> <span class="s2">&quot;08/24/2006&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_bios_version&quot;</span><span class="p">:</span> <span class="s2">&quot;4.2.amazon&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_cmdline&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;BOOT_IMAGE&quot;</span><span class="p">:</span> <span class="s2">&quot;/ostree/rhcos-4e5acf354cf6105d69ee299aaf36dd5ca7cd5d95cc1c1669270ddc897f89adc1/vmlinuz-4.18.0-193.14.3.el8_2.x86_64&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;ttyS0,115200n8&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;coreos.oem.id&quot;</span><span class="p">:</span> <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ignition.platform.id&quot;</span><span class="p">:</span> <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;nosmt&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;ostree&quot;</span><span class="p">:</span> <span class="s2">&quot;/ostree/boot.0/rhcos/4e5acf354cf6105d69ee299aaf36dd5ca7cd5d95cc1c1669270ddc897f89adc1/0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="s2">&quot;UUID=77a6c49a-0403-474d-b727-80e256f7c564&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rootflags&quot;</span><span class="p">:</span> <span class="s2">&quot;defaults,prjquota&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rw&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_date_time&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-08-08&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;day&quot;</span><span class="p">:</span> <span class="s2">&quot;08&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;epoch&quot;</span><span class="p">:</span> <span class="s2">&quot;1596895281&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;hour&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-08-08T14:01:21Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601_basic&quot;</span><span class="p">:</span> <span class="s2">&quot;20200808T140121131035&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601_basic_short&quot;</span><span class="p">:</span> <span class="s2">&quot;20200808T140121&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601_micro&quot;</span><span class="p">:</span> <span class="s2">&quot;2020-08-08T14:01:21.131139Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;minute&quot;</span><span class="p">:</span> <span class="s2">&quot;01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;month&quot;</span><span class="p">:</span> <span class="s2">&quot;08&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="s2">&quot;21&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;14:01:21&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;tz&quot;</span><span class="p">:</span> <span class="s2">&quot;UTC&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;tz_offset&quot;</span><span class="p">:</span> <span class="s2">&quot;+0000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;weekday&quot;</span><span class="p">:</span> <span class="s2">&quot;Saturday&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;weekday_number&quot;</span><span class="p">:</span> <span class="s2">&quot;6&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;weeknumber&quot;</span><span class="p">:</span> <span class="s2">&quot;31&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;year&quot;</span><span class="p">:</span> <span class="s2">&quot;2020&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_default_ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;10.129.4.202&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;eth0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;10.129.5.255&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;10.129.4.1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;interface&quot;</span><span class="p">:</span> <span class="s2">&quot;eth0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0a:58:0a:81:04:ca&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">8951</span><span class="p">,</span>
+        <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.254.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;10.129.4.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_default_ipv6&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="nt">&quot;ansible_device_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">{}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_devices&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;xvda&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;xvda1&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;2048&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span>
+                    <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;1.00 MB&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2048&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                <span class="p">},</span>
+                <span class="nt">&quot;xvda2&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;2097152&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span>
+                    <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;1.00 GB&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;4096&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                <span class="p">},</span>
+                <span class="nt">&quot;xvda3&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                    <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                        <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+                    <span class="p">},</span>
+                    <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;249556959&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span>
+                    <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;119.00 GB&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2101248&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;mq-deadline&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;251658240&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;120.00 GB&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_distribution&quot;</span><span class="p">:</span> <span class="s2">&quot;Alpine&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_distribution_file_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_distribution_file_path&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/alpine-release&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_distribution_file_variety&quot;</span><span class="p">:</span> <span class="s2">&quot;Alpine&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_distribution_major_version&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_distribution_release&quot;</span><span class="p">:</span> <span class="s2">&quot;NA&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_distribution_version&quot;</span><span class="p">:</span> <span class="s2">&quot;3.12.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_dns&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;nameservers&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;172.30.0.10&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ndots&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;search&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;dmandry.svc.cluster.local&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;svc.cluster.local&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;cluster.local&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;us-east-2.compute.internal&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_domain&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_effective_group_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_effective_user_id&quot;</span><span class="p">:</span> <span class="mi">1006290000</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_env&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;GPG_KEY&quot;</span><span class="p">:</span> <span class="s2">&quot;E3FF2839C048B25C084DEBE9B26995E310250568&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;HOME&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;HOSTNAME&quot;</span><span class="p">:</span> <span class="s2">&quot;python-0000000022&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_PORT&quot;</span><span class="p">:</span> <span class="s2">&quot;tcp://172.30.0.1:443&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_PORT_443_TCP&quot;</span><span class="p">:</span> <span class="s2">&quot;tcp://172.30.0.1:443&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_PORT_443_TCP_ADDR&quot;</span><span class="p">:</span> <span class="s2">&quot;172.30.0.1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_PORT_443_TCP_PORT&quot;</span><span class="p">:</span> <span class="s2">&quot;443&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_PORT_443_TCP_PROTO&quot;</span><span class="p">:</span> <span class="s2">&quot;tcp&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_SERVICE_HOST&quot;</span><span class="p">:</span> <span class="s2">&quot;172.30.0.1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_SERVICE_PORT&quot;</span><span class="p">:</span> <span class="s2">&quot;443&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KUBERNETES_SERVICE_PORT_HTTPS&quot;</span><span class="p">:</span> <span class="s2">&quot;443&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;LANG&quot;</span><span class="p">:</span> <span class="s2">&quot;C.UTF-8&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PATH&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PWD&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PYTHON_GET_PIP_SHA256&quot;</span><span class="p">:</span> <span class="s2">&quot;d4d62a0850fe0c2e6325b2cc20d818c580563de5a2038f917e3cb0e25280b4d1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PYTHON_GET_PIP_URL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pypa/get-pip/raw/5578af97f8b2b466f4cdbebe18a3ba2d48ad1434/get-pip.py&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PYTHON_PIP_VERSION&quot;</span><span class="p">:</span> <span class="s2">&quot;20.2.1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PYTHON_VERSION&quot;</span><span class="p">:</span> <span class="s2">&quot;3.8.5&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;SHLVL&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;TERM&quot;</span><span class="p">:</span> <span class="s2">&quot;xterm&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_PORT&quot;</span><span class="p">:</span> <span class="s2">&quot;tcp://172.30.103.133:9000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_PORT_9000_TCP&quot;</span><span class="p">:</span> <span class="s2">&quot;tcp://172.30.103.133:9000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_PORT_9000_TCP_ADDR&quot;</span><span class="p">:</span> <span class="s2">&quot;172.30.103.133&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_PORT_9000_TCP_PORT&quot;</span><span class="p">:</span> <span class="s2">&quot;9000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_PORT_9000_TCP_PROTO&quot;</span><span class="p">:</span> <span class="s2">&quot;tcp&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_SERVICE_HOST&quot;</span><span class="p">:</span> <span class="s2">&quot;172.30.103.133&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_SERVICE_PORT&quot;</span><span class="p">:</span> <span class="s2">&quot;9000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ZUUL_SERVICE_PORT_9000_TCP&quot;</span><span class="p">:</span> <span class="s2">&quot;9000&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_eth0&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;eth0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;10.129.4.202&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;10.129.5.255&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.254.0&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;10.129.4.0&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;ipv6&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;fe80::10c0:d7ff:fe84:509e&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;64&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;link&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0a:58:0a:81:04:ca&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">8951</span><span class="p">,</span>
+        <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_fibre_channel_wwn&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;ansible_fips&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_form_factor&quot;</span><span class="p">:</span> <span class="s2">&quot;Other&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_fqdn&quot;</span><span class="p">:</span> <span class="s2">&quot;python-0000000022&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;python-0000000022&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_hostnqn&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_interfaces&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;lo&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;eth0&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;ansible_is_chroot&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_iscsi_iqn&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_kernel&quot;</span><span class="p">:</span> <span class="s2">&quot;4.18.0-193.14.3.el8_2.x86_64&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_kernel_version&quot;</span><span class="p">:</span> <span class="s2">&quot;#1 SMP Mon Jul 20 15:02:29 UTC 2020&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_lo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;lo&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.0.0.0&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;127.0.0.0&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;ipv6&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;::1&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;128&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">65536</span><span class="p">,</span>
+        <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;loopback&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_local&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="nt">&quot;ansible_lsb&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="nt">&quot;ansible_machine&quot;</span><span class="p">:</span> <span class="s2">&quot;x86_64&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_memfree_mb&quot;</span><span class="p">:</span> <span class="mi">9296</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_memory_mb&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;nocache&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">23416</span><span class="p">,</span>
+            <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">8744</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;real&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">9296</span><span class="p">,</span>
+            <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">32160</span><span class="p">,</span>
+            <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">22864</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;swap&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;cached&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_memtotal_mb&quot;</span><span class="p">:</span> <span class="mi">32160</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_mounts&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">8150448</span><span class="p">,</span>
+            <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+            <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">31192059</span><span class="p">,</span>
+            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">23041611</span><span class="p">,</span>
+            <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/xvda3&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;xfs&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">60385516</span><span class="p">,</span>
+            <span class="nt">&quot;inode_total&quot;</span><span class="p">:</span> <span class="mi">62389184</span><span class="p">,</span>
+            <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">2003668</span><span class="p">,</span>
+            <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hosts&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,seclabel,relatime,attr2,inode64,prjquota&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">33384235008</span><span class="p">,</span>
+            <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">127762673664</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">8150454</span><span class="p">,</span>
+            <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+            <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">31192059</span><span class="p">,</span>
+            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">23041605</span><span class="p">,</span>
+            <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/xvda3&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;xfs&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">60385516</span><span class="p">,</span>
+            <span class="nt">&quot;inode_total&quot;</span><span class="p">:</span> <span class="mi">62389184</span><span class="p">,</span>
+            <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">2003668</span><span class="p">,</span>
+            <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/termination-log&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,seclabel,relatime,attr2,inode64,prjquota&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">33384259584</span><span class="p">,</span>
+            <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">127762673664</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;ansible_nodename&quot;</span><span class="p">:</span> <span class="s2">&quot;python-0000000022&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_os_family&quot;</span><span class="p">:</span> <span class="s2">&quot;Alpine&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_pkg_mgr&quot;</span><span class="p">:</span> <span class="s2">&quot;apk&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_proc_cmdline&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;BOOT_IMAGE&quot;</span><span class="p">:</span> <span class="s2">&quot;/ostree/rhcos-4e5acf354cf6105d69ee299aaf36dd5ca7cd5d95cc1c1669270ddc897f89adc1/vmlinuz-4.18.0-193.14.3.el8_2.x86_64&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;tty0&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;ttyS0,115200n8&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;coreos.oem.id&quot;</span><span class="p">:</span> <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ignition.platform.id&quot;</span><span class="p">:</span> <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;nosmt&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;ostree&quot;</span><span class="p">:</span> <span class="s2">&quot;/ostree/boot.0/rhcos/4e5acf354cf6105d69ee299aaf36dd5ca7cd5d95cc1c1669270ddc897f89adc1/0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="s2">&quot;UUID=77a6c49a-0403-474d-b727-80e256f7c564&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rootflags&quot;</span><span class="p">:</span> <span class="s2">&quot;defaults,prjquota&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rw&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_processor&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2686 v4 @ 2.30GHz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2686 v4 @ 2.30GHz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2686 v4 @ 2.30GHz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2686 v4 @ 2.30GHz&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;ansible_processor_cores&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_processor_count&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_processor_threads_per_core&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_processor_vcpus&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_product_name&quot;</span><span class="p">:</span> <span class="s2">&quot;HVM domU&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_product_serial&quot;</span><span class="p">:</span> <span class="s2">&quot;NA&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_product_uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;NA&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_product_version&quot;</span><span class="p">:</span> <span class="s2">&quot;4.2.amazon&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_python&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/local/bin/python&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;has_sslcontext&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;cpython&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;major&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="nt">&quot;micro&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+            <span class="nt">&quot;minor&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+            <span class="nt">&quot;releaselevel&quot;</span><span class="p">:</span> <span class="s2">&quot;final&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;serial&quot;</span><span class="p">:</span> <span class="mi">0</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;version_info&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="mi">3</span><span class="p">,</span>
+            <span class="mi">8</span><span class="p">,</span>
+            <span class="mi">5</span><span class="p">,</span>
+            <span class="s2">&quot;final&quot;</span><span class="p">,</span>
+            <span class="mi">0</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_python_version&quot;</span><span class="p">:</span> <span class="s2">&quot;3.8.5&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_real_group_id&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_real_user_id&quot;</span><span class="p">:</span> <span class="mi">1006290000</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_selinux&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;Missing selinux Python library&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ansible_selinux_python_present&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_service_mgr&quot;</span><span class="p">:</span> <span class="s2">&quot;sysvinit&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_swapfree_mb&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_swaptotal_mb&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_system&quot;</span><span class="p">:</span> <span class="s2">&quot;Linux&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_system_vendor&quot;</span><span class="p">:</span> <span class="s2">&quot;Xen&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_uptime_seconds&quot;</span><span class="p">:</span> <span class="mi">251653</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_user_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_user_gecos&quot;</span><span class="p">:</span> <span class="s2">&quot;1006290000 user&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_user_gid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;1006290000&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_user_shell&quot;</span><span class="p">:</span> <span class="s2">&quot;/sbin/nologin&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_user_uid&quot;</span><span class="p">:</span> <span class="mi">1006290000</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_userspace_architecture&quot;</span><span class="p">:</span> <span class="s2">&quot;x86_64&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_userspace_bits&quot;</span><span class="p">:</span> <span class="s2">&quot;64&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_virtualization_role&quot;</span><span class="p">:</span> <span class="s2">&quot;guest&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_virtualization_type&quot;</span><span class="p">:</span> <span class="s2">&quot;xen&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;discovered_interpreter_python&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/local/bin/python&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gather_subset&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;all&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;module_setup&quot;</span><span class="p">:</span> <span class="kc">true</span>
+<span class="p">}</span>
+</pre></div>
+
+            <h2>Warnings</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;Platform linux on host python is using the discovered Python interpreter at /usr/local/bin/python, but future installation of another Python interpreter could change this. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>
